@@ -1,0 +1,1035 @@
+@font-face { 
+    font-family:"Font Awesome 5 Free";
+    font-style:normal;
+    font-weight:400;
+    font-display:block;
+    src:url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.eot);
+    src:url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.woff2) format("woff2"),url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.woff) format("woff"),url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.ttf) format("truetype"),url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+  } 
+  @font-face { 
+    font-family:"Font Awesome 5 Free";
+    font-style:normal;
+    font-weight:900;
+    font-display:block;
+    src:url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-solid-900.eot);
+    src:url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-solid-900.woff2) format("woff2"),url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-solid-900.woff) format("woff"),url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-solid-900.ttf) format("truetype"),url(http://54.206.21.172/wp-content/themes/DailyPress/assets/third-parties/fontawesome-free-5.13.0-web/webfonts/fa-solid-900.svg#fontawesome) format("svg");
+  } 
+
+  @font-face { 
+    font-family:'Montserrat-Bold';
+    src:url("http://54.206.21.172/wp-content/themes/DailyPress/assets/fonts/Montserrat-Bold.otf");
+  } 
+  @font-face { 
+    font-family:'Montserrat-Light';
+    src:url("http://54.206.21.172/wp-content/themes/DailyPress/assets/fonts/Montserrat-Light.otf");
+  } 
+  @font-face { 
+    font-family:'Montserrat-Regular';
+    src:url("http://54.206.21.172/wp-content/themes/DailyPress/assets/fonts/Montserrat-Regular.otf");
+  } 
+  @media all{ 
+    * { 
+      box-sizing:  inherit;
+      image-rendering: -webkit-optimize-contrast;
+    } 
+  
+    body { 
+      margin:    0; 
+      padding:   0; 
+      background:   #ffffff;
+      font-family:   "Montserrat-Light"; 
+      font-weight:   normal; 
+      line-height:   1.5; 
+      color:   #003055; 
+      -webkit-font-smoothing:   antialiased; 
+      -moz-osx-font-smoothing:   grayscale;
+      padding-top: 116px; 
+      -webkit-transition: all .3s; 
+      transition: all .3s;
+    } 
+  
+    html { 
+      line-height:  1.15; 
+      -webkit-text-size-adjust:  100%;
+      box-sizing: border-box; 
+      font-size: 100%;
+    } 
+  
+    div { 
+      margin: 0; 
+      padding: 0;
+    } 
+  
+    *,:before,:after { 
+      box-sizing: inherit;
+    } 
+  
+    .row { 
+      display: flex; 
+      max-width:  78.125rem; 
+      margin-right:  auto; 
+      margin-left:  auto; 
+      flex-flow: row wrap;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 64em){ 
+    .__reduce_max_width { 
+      max-width: 970px;
+    } 
+  }     
+  
+  @media all{ 
+    .__content_editor .row  { 
+      outline: none;
+    } 
+  
+    .row:after { 
+      clear: both;
+    } 
+  
+    .columns { 
+      width: 100%; 
+      float: left; 
+      padding-right: 0.625rem; 
+      padding-left: 0.625rem;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .columns { 
+      padding-right: 0.9375rem; 
+      padding-left: 0.9375rem;
+    } 
+  }     
+  
+  @media all{ 
+    .columns { 
+      float: left; 
+      clear: none;
+    } 
+  
+    .small-12 { 
+      width: 100%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .medium-12 { 
+      width: 100%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 64em){ 
+    .large-12 { 
+      width: 100%;
+    } 
+  }     
+  
+  @media all{ 
+    .columns { 
+      flex: 1 1 0px; 
+      padding-right: 0.625rem; 
+      padding-left: 0.625rem; 
+      min-width: 0;
+    } 
+  
+    .small-12 { 
+      flex: 0 0 100%; 
+      max-width: 100%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .medium-12 { 
+      flex: 0 0 100%; 
+      max-width: 100%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 64em){ 
+    .large-12 { 
+      flex: 0 0 100%; 
+      max-width: 100%;
+    } 
+  }     
+  
+  @media all{ 
+    .columns,.columns { 
+      position: relative;
+    } 
+  
+    p { 
+      margin:    0; 
+      padding:    0;
+      margin-bottom:  0; 
+      font-size:   inherit; 
+      line-height:  1.3;
+      text-rendering:   optimizeLegibility;
+      overflow-wrap:  break-word;
+    } 
+  
+    #membership { 
+      position: relative;
+    } 
+  
+    h3 { 
+      margin:   0; 
+      padding:   0;
+      font-family:  inherit; 
+      font-style:  normal; 
+      font-weight:  normal; 
+      color:  inherit; 
+      text-rendering:  optimizeLegibility;
+      font-size: 1.1875rem; 
+      line-height: 1; 
+      margin-top: 0; 
+      margin-bottom: 0.5rem;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    h3 { 
+      font-size: 1.9375rem;
+    } 
+  }     
+  
+  @media all{ 
+    h3 { 
+      overflow-wrap:  break-word;
+      line-height: 1; 
+      margin: 0;
+    } 
+  
+    #membership h3  { 
+      font: 24px 'Montserrat-Bold';
+    } 
+  
+    hr { 
+      box-sizing:  content-box; 
+      height:  0; 
+      overflow:  visible;
+      clear: both; 
+      max-width: 78.125rem; 
+      margin: 1.25rem auto; 
+      border-top: 0; 
+      border-right: 0; 
+      border-bottom: 1px solid #b0b0b0; 
+      border-left: 0;
+    } 
+  
+    span { 
+      overflow-wrap: break-word;
+    } 
+  
+    .wpcf7-list-item { 
+      display: inline-block; 
+      margin: 0 0 0 1em;
+    } 
+  
+    .aligncenter { 
+      display:  table;
+      clear:   both;
+      margin-right: auto; 
+      margin-left: auto;
+    } 
+  
+    .__primary_btn { 
+      display: table;
+    } 
+  
+    #payment-form .__member_info  { 
+      max-width: 600px;
+    } 
+  
+    #payment-form .__card_title  { 
+      position: relative; 
+      display: table; 
+      padding-right: 120px;
+    } 
+  
+    #payment-form .__card_title:after  { 
+      content: ""; 
+      /* background: url( 'imgs/card-logo.png' ) center/100% no-repeat;  */
+      display: block; 
+      height: 33px; 
+      width: 100px; 
+      position: absolute; 
+      right: 0; 
+      top: 0; 
+      background-image: url("http://54.206.21.172/wp-content/themes/DailyPress/functions/membership/assets/imgs/card-logo.png"); 
+      background-position-x: center; 
+      background-position-y: center; 
+      background-size: 100%; 
+      background-repeat-x: no-repeat; 
+      background-repeat-y: no-repeat; 
+      background-attachment: initial; 
+      background-origin: initial; 
+      background-clip: initial; 
+      background-color: initial;
+    } 
+  
+    form { 
+      margin:  0; 
+      padding:  0;
+      outline: none;
+    } 
+  
+    .red-text { 
+      color: red; 
+      font-weight: 900;
+    } 
+  
+    h4 { 
+      margin:   0; 
+      padding:   0;
+      font-family:  inherit; 
+      font-style:  normal; 
+      font-weight:  normal; 
+      color:  inherit; 
+      text-rendering:  optimizeLegibility;
+      font-size: 1.125rem; 
+      line-height: 1; 
+      margin-top: 0; 
+      margin-bottom: 0.5rem;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    h4 { 
+      font-size: 1.5625rem;
+    } 
+  }     
+  
+  @media all{ 
+    h4 { 
+      overflow-wrap:  break-word;
+      line-height: 1; 
+      margin: 0;
+    } 
+  
+    #thankyou-page h4  { 
+      font: 22px 'Montserrat-Regular'; 
+      margin-bottom: 20px;
+    } 
+  
+    .row .row  { 
+      margin-right: -0.625rem; 
+      margin-left: -0.625rem;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .row .row  { 
+      margin-right: -0.9375rem; 
+      margin-left: -0.9375rem;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 64em){ 
+    .row .row  { 
+      margin-right: -0.9375rem; 
+      margin-left: -0.9375rem;
+    } 
+  }     
+  
+  @media all{ 
+    .row:not(.expanded) .row  { 
+      max-width: none;
+    } 
+  
+    .align-center { 
+      justify-content: center;
+    } 
+  
+    .__membership_title { 
+      display: flex; 
+      align-content: space-around; 
+      justify-content: flex-start; 
+      align-items: baseline;
+    } 
+  
+    input { 
+      font-family:   inherit;
+      font-size:    100%; 
+      line-height:    1.15; 
+      margin:    0;
+      overflow:   visible;
+      outline: none !important; 
+      -webkit-transition: all .3s; 
+      transition: all .3s;
+    } 
+  
+    [type="checkbox"] { 
+      box-sizing: border-box; 
+      padding: 0;
+    } 
+  
+    input[type="checkbox"] { 
+      position: relative; 
+      width: 20px !important; 
+      height: 24px; 
+      top: -1px; 
+      display: inline-block; 
+      vertical-align: middle; 
+      margin: 0 10px 0 0; 
+      cursor: pointer;
+    } 
+  
+    input[type="radio"]:after,input[type="checkbox"]:after { 
+      content: ''; 
+      position: absolute; 
+      z-index: 1; 
+      display: block; 
+      background: #fff; 
+      width: 24px; 
+      height: 24px; 
+      border: 1px solid #707070; 
+      top: 0; 
+      left: 0;
+    } 
+  
+    input[type="checkbox"]:checked:after { 
+      background: #fff url(http://54.206.21.172/wp-content/themes/DailyPress/assets/images/checkbox.png) center/16px no-repeat; 
+      background-image: url("http://54.206.21.172/wp-content/themes/DailyPress/assets/images/checkbox.png"); 
+      background-position-x: center; 
+      background-position-y: center; 
+      background-size: 16px; 
+      background-repeat-x: no-repeat; 
+      background-repeat-y: no-repeat; 
+      background-attachment: initial; 
+      background-origin: initial; 
+      background-clip: initial; 
+      background-color: rgb(255, 255, 255);
+    } 
+  
+    .__underline { 
+      position: relative; 
+      margin-bottom: 20px; 
+      padding-bottom: 20px; 
+      color: #003055;
+    } 
+  
+    #membership h3 .__underline  { 
+      display: block;
+    } 
+  
+    .__underline:after { 
+      content: ""; 
+      position: absolute; 
+      height: 2px; 
+      width: 50px; 
+      background: #98d4e7; 
+      left: 0; 
+      bottom: 0;
+    } 
+  
+    button { 
+      font-family:   inherit;
+      font-size:       100%; 
+      line-height:    1; 
+      margin:       0;
+      overflow:      visible;
+      text-transform:     none;
+      -webkit-appearance:    button;
+      padding:   0; 
+      appearance:   none; 
+      border:   0; 
+      border-radius:   0; 
+      background:   transparent; 
+      cursor:   auto;
+      outline: none !important; 
+      -webkit-transition: all .3s; 
+      transition: all .3s;
+    } 
+  
+    .__primary_btn button  { 
+      text-align: center; 
+      display: block; 
+      padding: 10px 20px; 
+      background-color: #98d4e7; 
+      color: #003055; 
+      font-family: 'Montserrat-Regular'; 
+      border: 0; 
+      letter-spacing: 1px; 
+      cursor: pointer; 
+      text-decoration: none !important; 
+      line-height: 1.3;
+    } 
+  
+    [data-whatinput="mouse"] button  { 
+      outline: 0;
+    } 
+  
+    .__primary_btn button:hover  { 
+      background-color: #003055; 
+      color: #98d4e7;
+    } 
+  
+    #payment-form .__card_info  { 
+      max-width: 500px; 
+      margin: 20px auto 30px;
+    } 
+  
+    .__payment_btn { 
+      display: flex !important; 
+      justify-content: space-between;
+    } 
+  
+    #thankyou-page h4 span  { 
+      font-family: 'Montserrat-Bold';
+    } 
+  
+    .column { 
+      width: 100%; 
+      float: left; 
+      padding-right: 0.625rem; 
+      padding-left: 0.625rem;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .column { 
+      padding-right: 0.9375rem; 
+      padding-left: 0.9375rem;
+    } 
+  }     
+  
+  @media all{ 
+    .column { 
+      float:   left; 
+      clear:   none;
+      flex:  1 1 0px; 
+      padding-right:  0.625rem; 
+      padding-left:  0.625rem; 
+      min-width:  0;
+      position: relative;
+    } 
+  
+    .small-11 { 
+      width: 91.66667%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .medium-7 { 
+      width: 58.33333%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 64em){ 
+    .large-6 { 
+      width: 50%;
+    } 
+  }     
+  
+  @media all{ 
+    .small-11 { 
+      flex: 0 0 91.66667%; 
+      max-width: 91.66667%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .medium-7 { 
+      flex: 0 0 58.33333%; 
+      max-width: 58.33333%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 64em){ 
+    .large-6 { 
+      flex: 0 0 50%; 
+      max-width: 50%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .medium-8 { 
+      width: 66.66667%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 64em){ 
+    .large-8 { 
+      width: 66.66667%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .medium-8 { 
+      flex: 0 0 66.66667%; 
+      max-width: 66.66667%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 64em){ 
+    .large-8 { 
+      flex: 0 0 66.66667%; 
+      max-width: 66.66667%;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .medium-6 { 
+      width:  50%;
+      flex: 0 0 50%; 
+      max-width: 50%;
+    } 
+  }     
+  
+  @media all{ 
+    .__membership_edit { 
+      color: #fff; 
+      background-color: #003055; 
+      border-radius: 4px; 
+      display: flex; 
+      align-content: space-around; 
+      justify-content: space-around; 
+      align-items: center; 
+      padding: 6px 7px; 
+      margin-left: 20px; 
+      width: 82px; 
+      cursor: pointer;
+    } 
+  
+    .columns,.columns:last-child:not(:first-child) { 
+      float: left; 
+      clear: none;
+    } 
+  
+    .columns:last-child:not(:first-child) { 
+      float: right;
+    } 
+  
+    .columns:last-child:not(:first-child),.columns:last-child:not(:first-child) { 
+      float: left;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    .medium-4 { 
+      width:  33.33333%;
+      flex: 0 0 33.33333%; 
+      max-width: 33.33333%;
+    } 
+  }     
+  
+  @media all{ 
+    #payment-form #card-element  { 
+      background-color: #ebedec; 
+      outline: none; 
+      border-radius: 3px; 
+      padding: 10px 15px;
+    } 
+  
+    .tooltip { 
+      position: relative; 
+      display: inline-block; 
+      border-bottom: 1px dotted #98d4e7;
+    } 
+  
+    .__renew_form h3  { 
+      color: #003055;
+    } 
+  
+    .__renew_form label  { 
+      margin: 1.5rem 0; 
+      width: 24rem;
+    } 
+  
+    .__profile_detail label  { 
+      margin: 0.5rem 0 1rem; 
+      width: 24rem;
+    } 
+  
+    ._profile_detail .vertical_space  { 
+      margin: 1.5rem 0;
+    } 
+  
+    ._profile_detail ._custom_success  { 
+      background-color: #28A745; 
+      color: #fff !important; 
+      padding: 0.5rem 0; 
+      margin: 1rem 0;
+    } 
+  
+    .__profile_detail .callout.secondary  { 
+      border-radius: 10px; 
+      padding: 10px 30px; 
+      margin: 1.5rem 0 2rem; 
+      background-color: #F7F8F9 !important;
+    } 
+  
+    img { 
+      display: inline-block; 
+      border-style:  none;
+      vertical-align: middle; 
+      max-width: 100%; 
+      height: auto; 
+      -ms-interpolation-mode: bicubic;
+    } 
+  
+    .__membership_edit span  { 
+      font-size: 14px;
+    } 
+  
+    ._custom_form ._cf_field  { 
+      margin-bottom: 25px;
+    } 
+  
+    .tooltip .tooltiptext  { 
+      visibility: hidden; 
+      width: 300px; 
+      background-color: #98d4e7; 
+      color: #fff; 
+      text-align: center; 
+      border-radius: 6px; 
+      padding: 5px 0; 
+      position: absolute; 
+      z-index: 1; 
+      top: 130%; 
+      left: 0; 
+      margin-left: -60px;
+    } 
+  
+    .tooltip .tooltiptext:after  { 
+      content: ""; 
+      position: absolute; 
+      bottom: 100%; 
+      left: 50%; 
+      margin-left: -5px; 
+      border-width: 5px; 
+      border-style: solid; 
+      border-color: transparent transparent #98d4e7 transparent;
+    } 
+  
+    .tooltip:hover .tooltiptext  { 
+      visibility: visible;
+    } 
+  
+    strong { 
+      font-weight:  bold; 
+      line-height: inherit;
+    } 
+  
+    #thankyou-page .__ty_icon  { 
+      display: block; 
+      margin: 30px auto; 
+      height: 100px; 
+      width: 100px;
+    } 
+  
+    #thankyou-page ._ty_error ._ty_icon  { 
+      /* background: url( 'imgs/danger.png' ) center/100% no-repeat;  */
+      background-image: url("http://54.206.21.172/wp-content/themes/DailyPress/functions/membership/assets/imgs/danger.png"); 
+      background-position-x: center; 
+      background-position-y: center; 
+      background-size: 100%; 
+      background-repeat-x: no-repeat; 
+      background-repeat-y: no-repeat; 
+      background-attachment: initial; 
+      background-origin: initial; 
+      background-clip: initial; 
+      background-color: initial;
+    } 
+  
+    #thankyou-page .__ty_msg  { 
+      text-align: center; 
+      margin-bottom: 30px; 
+      font-weight: 700; 
+      font-size: 24px;
+    } 
+  
+    #thankyou-page ._ty_error ._ty_msg  { 
+      color: #bc2323;
+    } 
+  
+    h5 { 
+      margin:   0; 
+      padding:   0;
+      font-family:  inherit; 
+      font-style:  normal; 
+      font-weight:  normal; 
+      color:  inherit; 
+      text-rendering:  optimizeLegibility;
+      font-size: 1.0625rem; 
+      line-height: 1; 
+      margin-top: 0; 
+      margin-bottom: 0.5rem;
+    } 
+  }     
+  
+  @media print, screen and (min-width: 40em){ 
+    h5 { 
+      font-size: 1.25rem;
+    } 
+  }     
+  
+  @media all{ 
+    h5 { 
+      overflow-wrap:  break-word;
+      line-height: 1; 
+      margin: 0;
+    } 
+  
+    ._profile_detail ._custom_success h5  { 
+      font-size: 16px; 
+      margin-bottom: 0; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      padding: 0 10px;
+    } 
+  
+    .align-justify { 
+      justify-content: space-between;
+    } 
+  
+    ._profile_detail ._space_bottom  { 
+      margin-bottom: 20px;
+    } 
+  
+    a { 
+      background-color:    transparent;
+      line-height:   1; 
+      color:   #003055; 
+      text-decoration:   none; 
+      cursor:   pointer;
+      margin:  0;
+      outline: none !important; 
+      -webkit-transition: all .3s; 
+      transition: all .3s;
+    } 
+  
+    a:hover { 
+      color: #003055; 
+      text-decoration: underline;
+    } 
+  
+    ._custom_form ._cf_field label  { 
+      display: block; 
+      color: #003055; 
+      margin-bottom: 7px;
+    } 
+  
+    input:disabled { 
+      background-color: #fefefe !important; 
+      cursor: not-allowed;
+    } 
+  
+    ._custom_form ._cf_field input  { 
+      border: 1px solid #000000; 
+      width: 100%; 
+      padding: 10px;
+    } 
+  
+    ._custom_form .cf_field._field_select > span  { 
+      position: relative; 
+      display: block;
+    } 
+  
+    ._custom_form .cf_field._field_select > span:after  { 
+      content: "\f078"; 
+      font-weight: 900; 
+      font-family: "Font Awesome 5 Free"; 
+      color: #b0b0b0; 
+      right: 14px; 
+      position: absolute; 
+      top: 10px;
+    } 
+  
+    input[readonly] { 
+      background-color: #fefefe !important; 
+      cursor: not-allowed;
+    } 
+  
+    ._custom_form .cf_field._field_date > span  { 
+      position: relative; 
+      display: block;
+    } 
+  
+    ._custom_form .cf_field._field_date > span:after  { 
+      content: "\f073"; 
+      font-weight: 900; 
+      font-family: "Font Awesome 5 Free"; 
+      color: #b0b0b0; 
+      right: 14px; 
+      position: absolute; 
+      top: 10px;
+    } 
+  
+    ._custom_form .cf_field._field_radio .wpcf7-list-item  { 
+      margin: 8px 20px 8px 0;
+    } 
+  
+    ._renew_form ._cf_field  { 
+      margin-bottom: 25px;
+    } 
+  
+    ._renew_form ._profile_actions  { 
+      display: flex; 
+      justify-content: flex-start;
+    } 
+  
+    ._profile_detail ._custom_success img  { 
+      margin-right: 10px;
+    } 
+  
+    ._custom_form ._cf_field label > span  { 
+      color: #cc4b37;
+    } 
+  
+    select { 
+      font-family:    inherit;
+      font-size:      100%; 
+      line-height:      1.15; 
+      margin:      0;
+      text-transform:     none;
+      box-sizing:    border-box; 
+      width:    100%; 
+      border-radius:    0;
+      outline:  none !important; 
+      -webkit-transition:  all .3s; 
+      transition:  all .3s;
+      cursor: pointer; 
+      -webkit-appearance: none; 
+      -moz-appearance: window;
+    } 
+  
+    ._custom_form ._cf_field select  { 
+      border: 1px solid #000000; 
+      width: 100%; 
+      padding: 10px;
+    } 
+  
+    ._custom_form .cf_field._field_select > span select  { 
+      -moz-appearance: window; 
+      -webkit-appearance: none; 
+      background: transparent; 
+      padding-right: 40px; 
+      position: relative; 
+      z-index: 1;
+    } 
+  
+    input:disabled,input[readonly] { 
+      background-color: #fefefe !important; 
+      cursor: not-allowed;
+    } 
+  
+    .flatpickr-input[readonly] { 
+      cursor: pointer;
+    } 
+  
+    [type="radio"] { 
+      box-sizing: border-box; 
+      padding: 0;
+    } 
+  
+    input[type="radio"] { 
+      position: relative; 
+      width: 20px !important; 
+      height: 24px; 
+      top: -1px; 
+      display: inline-block; 
+      vertical-align: middle; 
+      margin: 0 10px 0 0; 
+      cursor: pointer;
+    } 
+  
+    input[type="radio"]:after { 
+      border-radius: 50%;
+    } 
+  
+    input[type="radio"]:checked:after { 
+      background: #fff url(http://54.206.21.172/wp-content/themes/DailyPress/assets/images/radio.png) center/15px no-repeat; 
+      background-image: url("http://54.206.21.172/wp-content/themes/DailyPress/assets/images/radio.png"); 
+      background-position-x: center; 
+      background-position-y: center; 
+      background-size: 15px; 
+      background-repeat-x: no-repeat; 
+      background-repeat-y: no-repeat; 
+      background-attachment: initial; 
+      background-origin: initial; 
+      background-clip: initial; 
+      background-color: rgb(255, 255, 255);
+    } 
+  
+    ._renew_form ._cf_field label  { 
+      display: block; 
+      color: #003055; 
+      margin-bottom: 7px;
+    } 
+  
+    ._renew_form ._cf_field input  { 
+      border: 1px solid #F5F5F6; 
+      width: 100%; 
+      padding: 10px; 
+      border-radius: 5px; 
+      background-color: #F5F5F6;
+    } 
+  
+    button,[type="button"] { 
+      -webkit-appearance: button;
+    } 
+  
+    ._profile_actions ._btn_primary  { 
+      color: #fff; 
+      background-color: #003055; 
+      border-radius: 5px; 
+      border: 1px solid #003055; 
+      padding: 12px 20px; 
+      margin-left: 0;
+    } 
+  
+    ._renew_form .profile_actions ._btn_primary  { 
+      color: #fff; 
+      background-color: #003055; 
+      border-radius: 5px; 
+      border: 1px solid #003055; 
+      padding: 12px 20px;
+    } 
+  
+    ._profile_detail ._cf_fieldleft  { 
+      display: flex; 
+      justify-content: start; 
+      align-items: center;
+    } 
+  
+    ._profile_detail ._cf_fieldright  { 
+      display: flex; 
+      justify-content: start; 
+      align-items: center;
+    } 
+  
+    ._renew_form ._cf_field label > span  { 
+      color: #cc4b37;
+    } 
+  
+    ._profile_detail ._cf_fieldleft label  { 
+      display: block; 
+      color: #003055; 
+      margin: 0.5rem 0; 
+      width: auto;
+    } 
+  
+    ._profile_detail ._cf_fieldright label  { 
+      display: block; 
+      color: #003055; 
+      margin: 0.5rem 0; 
+      width: auto;
+    } 
+  
+    ._profile_detail .cf_fieldright ._profile_value  { 
+      color: #17A2B8; 
+      margin-bottom: 0; 
+      margin-left: 20px;
+    } 
+  
+    ._profile_detail .cf_fieldleft ._profile_value  { 
+      color: #17A2B8; 
+      margin-bottom: 0; 
+      margin-left: 20px; 
+      overflow: auto;
+    } 
+  }
